@@ -178,6 +178,62 @@
             box-shadow: 0 4px 16px var(--accent-glow);
         }
 
+        /* Nav actions container (Discord + Tải ngay) */
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Discord button (navbar — nhỏ) */
+        .btn-discord {
+            background: #5865F2;
+            color: #fff;
+            border: 1px solid #5865F2;
+            padding: 9px 18px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .btn-discord:hover {
+            background: #4752c4;
+            border-color: #4752c4;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(88, 101, 242, 0.45);
+        }
+        .btn-discord i { font-size: 15px; }
+
+        /* Discord button (hero — to) */
+        .btn-discord-lg {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #5865F2;
+            color: #fff;
+            border: 1px solid #5865F2;
+            padding: 14px 32px;
+            border-radius: var(--radius);
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all .2s;
+            box-shadow: 0 4px 16px rgba(88, 101, 242, 0.25);
+        }
+        .btn-discord-lg:hover {
+            background: #4752c4;
+            border-color: #4752c4;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(88, 101, 242, 0.5);
+        }
+        .btn-discord-lg i { font-size: 18px; }
+
         /* ─── HERO ─── */
         .hero {
             min-height: 100vh;
@@ -989,9 +1045,14 @@
             <li><a href="#games">Game</a></li>
             <li><a href="#download">Tải về</a></li>
         </ul>
-        <a href="#" class="btn-nav" onclick="openTerms(event)">
-            <i class="fas fa-download"></i> Tải ngay
-        </a>
+        <div class="nav-actions">
+            <a href="https://discord.gg/A4hFcr4Phs" class="btn-discord" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+            <a href="#" class="btn-nav" onclick="openTerms(event)">
+                <i class="fas fa-download"></i> Tải ngay
+            </a>
+        </div>
     </nav>
 
     <!-- ─── HERO ─── -->
@@ -1007,6 +1068,9 @@
             <div class="hero-buttons">
                 <a href="#" class="btn-primary-lg" onclick="openTerms(event)">
                     <i class="fas fa-download"></i> Tải RS Store
+                </a>
+                <a href="https://discord.gg/A4hFcr4Phs" class="btn-discord-lg" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-discord"></i> Tham gia Discord
                 </a>
             </div>
         </div>
@@ -1063,7 +1127,7 @@
             <p>Từ AAA đến indie, từ FPS đến RPG — RS Store cập nhật liên tục mọi tựa game hot nhất với mức giá tốt nhất thị trường. Lướt qua kho game, chọn lấy, chiến ngay.</p>
             <div class="deck-stats">
                 <div class="deck-stat">
-                    <span class="deck-stat-num">300+</span>
+                    <span class="deck-stat-num">500+</span>
                     <span class="deck-stat-label">Tựa game</span>
                 </div>
                 <div class="deck-stat">
